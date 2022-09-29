@@ -16,7 +16,7 @@ public class Area_Circumference {
 
     Scanner sc = new Scanner(System.in);
 
-    Area_Circumference(int radius){
+    public Area_Circumference(int radius){
         this.radius = radius;
     }
     
