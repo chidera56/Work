@@ -1,0 +1,102 @@
+body{
+    background-color: #100c08;
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divide img{
+    height: 80px;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.navbar li{
+    display: inline;
+    padding: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: hsl(240, 1%, 68%)
+}
+.container{
+    position: relative;
+}
+.text{
+    color: white;
+    float: left;
+    padding-top: 50px;
+    width: 50%;
+    padding-left: 50px;
+}
+.image{
+    height: 300px;
+}
+.paragraph{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+}
+.para{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.image1{
+    height: 200px;
+}
+#contact{
+    text-align: center;
+}
+#contact h1{
+    color: white;
+}
+#contact h4{
+    color: white;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.fa-brands.fa-instagram.fa-2xl{
+    color: white;
+}
+.fa-brands.fa-instagram.fa-2xl:hover{
+    color: hsl(240, 2%, 20%);
+}
+.fa-brands.fa-x-twitter.fa-2xl{
+    color: white;
+}
+.fa-brands.fa-x-twitter.fa-2xl:hover{
+    color: hsl(240, 2%, 20%);
+}
+.fa-brands.fa-tiktok.fa-2xl{
+    color: white;
+}
+.fa-brands.fa-tiktok.fa-2xl:hover{
+    color: hsl(240, 2%, 20%);
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: hsl(240, 2%, 12%);
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: hsl(240, 2%, 30%);
+}
