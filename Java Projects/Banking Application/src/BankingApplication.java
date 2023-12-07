@@ -16,53 +16,51 @@ public class BankingApplication {
 
         bank.showMenu();
         userinput.close();
-        
+
     }
 }
 
-class MyBankAccount{
+class MyBankAccount {
     double mybalance;
     double previoustransaction;
     String customerName;
     String customerID;
 
-    MyBankAccount(String cName, String cID){
+    MyBankAccount(String cName, String cID) {
         customerName = cName;
         customerID = cID;
     }
 
-    void deposit(double amount){
-        if(amount != 0){
+    void deposit(double amount) {
+        if (amount != 0) {
             mybalance = mybalance + amount;
             previoustransaction = amount;
         }
     }
 
-    void withdraw(double amount){
-        if(amount != 0){
+    void withdraw(double amount) {
+        if (amount != 0) {
             mybalance = mybalance - amount;
             previoustransaction = -amount;
         }
     }
 
-    void getPreviousTransaction(){
-        if(previoustransaction > 0){
-            System.out.println("Deposited: "+ previoustransaction);
-        }
-        else if(previoustransaction < 0){
-            System.out.println("Withdrawn: "+ Math.abs(previoustransaction));
-        }
-        else{
+    void getPreviousTransaction() {
+        if (previoustransaction > 0) {
+            System.out.println("Deposited: " + "$" + previoustransaction);
+        } else if (previoustransaction < 0) {
+            System.out.println("Withdrawn: " + "$" + Math.abs(previoustransaction));
+        } else {
             System.out.println("No transaction has been made!");
         }
     }
 
-    void showMenu(){
+    void showMenu() {
         int option = 0;
         Scanner userinput = new Scanner(System.in);
 
-        System.out.println("Welcome "+ customerName + "!");
-        System.out.println(customerName + ", your ID is "+ customerID + ".");
+        System.out.println("Welcome " + customerName + "!");
+        System.out.println(customerName + ", your ID is " + customerID + ".");
         System.out.println();
         System.out.println("1. Check account balance.");
         System.out.println("2. Deposit.");
@@ -70,16 +68,16 @@ class MyBankAccount{
         System.out.println("4. Get Previous Transaction.");
         System.out.println("5. Exit.");
 
-        do{
+        do {
             System.out.println("---------------------------------");
             System.out.println("Enter your option: ");
             System.out.println("---------------------------------");
             option = userinput.nextInt();
 
-            switch(option){
+            switch (option) {
                 case 1:
                     System.out.println("---------------------------------");
-                    System.out.println("Your balance is: "+mybalance);
+                    System.out.println("Your balance is: " + "$" + mybalance);
                     System.out.println("---------------------------------");
                     System.out.println();
                     break;
@@ -101,8 +99,8 @@ class MyBankAccount{
                     withdraw(amount2);
                     System.out.println();
                     break;
-                    
-                case 4: 
+
+                case 4:
                     System.out.println("---------------------------------");
                     getPreviousTransaction();
                     System.out.println("---------------------------------");
@@ -117,7 +115,7 @@ class MyBankAccount{
                     System.out.println("Invalid option!");
                     break;
             }
-        }while(option != 5);
+        } while (option != 5);
 
         userinput.close();
     }
