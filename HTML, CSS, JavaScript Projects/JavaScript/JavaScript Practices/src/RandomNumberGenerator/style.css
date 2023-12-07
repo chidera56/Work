@@ -1,0 +1,18 @@
+#xLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+#yLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+#zLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+.Roll{
+    text-align: center;
+}
