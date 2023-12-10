@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // Task 1
         Member m1 = new Member(1, "John", "Adult");
         Member m2 = new Member(2, "Jane", "Child");
         Member m3 = new Member(3, "Bob", "Adult");
