@@ -79,6 +79,10 @@ public class Seminar {
         }
     }
 
+    public String getSeminarCode() {
+        return seminarCode;
+    }
+
     @Override
     public String toString() {
         return "Seminar Code: " + seminarCode + ", Description: " + description +

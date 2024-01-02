@@ -1,19 +1,21 @@
-import java.time.LocalDate;
-
-// Date.java
 public class Date {
-    private LocalDate date;
-
-    public Date(int year, int month, int day) {
-        this.date = LocalDate.of(year, month, day);
-    }
+    private int day;
+    private int month;
+    private int year;
 
     public Date() {
-        this.date = LocalDate.now(); // or initialize with a specific date
     }
+
+    public Date(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    // Assume getters and setters for day, month, and year
 
     @Override
     public String toString() {
-        return date.toString();
+        return String.format("%02d/%02d/%04d", day, month, year);
     }
 }
