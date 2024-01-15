@@ -1,8 +1,12 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: darkblue;
+    margin: 0;
+    padding: 0;
 }
-.icons{
+.side-nav{
+    
+}
+/*.icons{
     text-align: center;
 }
 .icons a{
@@ -26,4 +30,4 @@ body{
 }
 .fa-brands.fa-tiktok.fa-2xl:hover{
     color: hsl(240, 2%, 20%);
-}
+}*/
