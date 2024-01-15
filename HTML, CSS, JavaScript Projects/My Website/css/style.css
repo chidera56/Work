@@ -5,7 +5,7 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background-image: url(cubes.jpg);
+    background-image: url("img/cubes.jpeg");
 }
 
 /*.icons{
