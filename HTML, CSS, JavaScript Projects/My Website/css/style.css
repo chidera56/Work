@@ -1,11 +1,13 @@
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+*{
     margin: 0;
     padding: 0;
 }
-.side-nav{
-    
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background-image: url("cubes.jpg");
 }
+
 /*.icons{
     text-align: center;
 }
