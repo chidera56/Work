@@ -1,3 +1,8 @@
+import React from 'react';
+
 function Message() {
-    return <h1>Hello My Friend</h1>
+    const name = 'Chidera';
+    return <h1>Hello {name}</h1>
 }
+
+export default Message;
